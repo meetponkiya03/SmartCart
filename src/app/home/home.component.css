@@ -1,0 +1,51 @@
+/* Style for the filter container */
+.filter-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #f0f0f0; 
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  .filter-component input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 300px;
+  }
+  
+  .filter-component button {
+    padding: 8px 15px;
+    background-color: #2979FF; 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .filter-component select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .filter-component select option {
+    padding: 8px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .filter-component {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .filter-component select,
+    .filter-component input {
+      margin-bottom: 10px;
+    }
+  }
+  

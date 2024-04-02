@@ -1,0 +1,25 @@
+<div class="header">
+    <div class="header-title" routerLink="/">Grocery</div>
+    <div class="header-end">
+      <div
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </div>
+      <div  routerLink="/cart" routerLinkActive="active">
+        Cart
+      </div>
+      <div  routerLink="/profile" routerLinkActive="active">
+        Profile
+      </div>
+      <div  routerLink="/order" routerLinkActive="active">
+        Order
+      </div>
+      <div routerLink="/login" routerLinkActive="active">
+        Login
+      </div>
+      <div>Logout</div>
+    </div>
+  </div>

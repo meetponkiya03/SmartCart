@@ -1,0 +1,82 @@
+/* Style for the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Style for the wrapper */
+  .wrapper {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  /* Style for the form title */
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the input boxes */
+  .input-box {
+    margin-bottom: 20px;
+  }
+  
+  .input-box input[type="text"],
+  .input-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the error message */
+  .error-message {
+    display: block;
+    color: #f44336; /* Red color for the error message */
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Style for the login button */
+  .button input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2979FF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button input[type="submit"]:hover {
+    background-color: #1958b7;
+  }
+  
+  /* Style for the text below the form */
+  .text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .text h3 {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .text a {
+    color: #2979FF;
+    text-decoration: none;
+  }
+  
+  .text a:hover {
+    text-decoration: underline;
+  }
+  

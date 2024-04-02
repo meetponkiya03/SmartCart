@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="wrapper">
+      <h2>Registration</h2>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            formControlName="name"
+            required
+          />
+          <span *ngIf="registerForm.get('name')?.invalid && registerForm.get('name')?.touched" class="error-message">Please enter your name</span>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            formControlName="email"
+            required
+          />
+          <span *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class="error-message">Please enter a valid email</span>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="Create password"
+            formControlName="password"
+            required
+          />
+          <span *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="error-message">Minimum 6 characters are required</span>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="Confirm password"
+            formControlName="confirmPassword"
+            required
+          />
+          <span *ngIf="registerForm.get('confirmPassword')?.invalid && registerForm.get('confirmPassword')?.touched" class="error-message">Please confirm your password</span>
+        </div>
+        <div class="policy">
+          <input type="checkbox" formControlName="policy" />
+          <h3>I accept all terms & conditions</h3>
+        </div>
+        <div class="input-box button">
+          <input
+            type="Submit"
+            [value]="loading ? 'Loading...' : 'Register Now'"
+            [disabled]="registerForm.invalid || loading"
+          />
+        </div>
+        <div class="text">
+          <h3>Already have an account? <a routerLink="/login">Login now</a></h3>
+        </div>
+      </form>
+    </div>
+  </div>
+  
